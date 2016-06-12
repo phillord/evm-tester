@@ -7,4 +7,4 @@ install:
   - evm install emacs-24.3-travis --use --skip
 script:
   - ls /home/travis/.evm
-  - find /home/travis.evm
+  - find /home/travis/.evm
