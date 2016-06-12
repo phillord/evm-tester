@@ -8,3 +8,5 @@ install:
 script:
   - ls /home/travis/.evm
   - find /home/travis/.evm
+  - evm-emacs --version
+  - evm-emacs --batch --eval '(message "hello world")'
