@@ -2,11 +2,9 @@ language: generic
 sudo: no
 install:
   - export PATH="/home/travis/.evm/bin:$PATH"
-  - git clone -b master https://github.com/phillord/evm.git /home/travis/.evm
+  - git clone -b evm-test https://github.com/phillord/evm.git /home/travis/.evm
   - evm config path /tmp
   - evm install emacs-25-pre-travis --use --skip
 script:
-  - ls /home/travis/.evm
-  - find /home/travis/.evm
   - evm-emacs --version
   - evm-emacs --batch --eval '(message "hello world")'
