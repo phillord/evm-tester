@@ -7,4 +7,4 @@ install:
   - ls *
 script:
   - /tmp/emacs-25-pre-travis/bin/emacs --version
-  - /tmp/emacs-25-pre-travis/bin/emacs --eval '(message "hello")'
+  - /tmp/emacs-25-pre-travis/bin/emacs --batch --eval '(message "hello")'
