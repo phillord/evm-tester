@@ -1,0 +1,10 @@
+language: generic
+sudo: no
+install:
+  - cd /tmp
+  - curl http://www.russet.org.uk/scratch/emacs-25-pre-travis.tgz
+  - tar xvf emacs-25-pre-travis.tgz
+  - ls *
+script
+  - /tmp/emacs-25-pre-travis/bin/emacs --version
+  - /tmp/emacs-25-pre-travis/bin/emacs --eval '(message "hello")'
