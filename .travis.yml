@@ -4,7 +4,7 @@ install:
   - export PATH="/home/travis/.evm/bin:$PATH"
   - git clone -b master https://github.com/phillord/evm.git /home/travis/.evm
   - evm config path /tmp
-  - evm install emacs-24.3-travis --use --skip
+  - evm install emacs-25-pre-travis --use --skip
 script:
   - ls /home/travis/.evm
   - find /home/travis/.evm
