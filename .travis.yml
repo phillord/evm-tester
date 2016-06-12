@@ -1,10 +1,10 @@
 language: generic
 sudo: no
 install:
-  - cd /tmp
-  - wget http://www.russet.org.uk/scratch/emacs-25-pre-travis.tgz
-  - tar xvf emacs-25-pre-travis.tgz
-  - ls *
+  - export PATH="/home/travis/.evm/bin:$PATH"
+  - git clone https://github.com/rejeep/evm.git /home/travis/.evm
+  - evm config path /tmp
+  - evm install emacs-24.3-travis --use --skip
 script:
-  - /tmp/emacs-25-pre-travis/bin/emacs --version
-  - /tmp/emacs-25-pre-travis/bin/emacs --batch --eval '(message "hello")'
+  - ls .evm
+  - find .evm
