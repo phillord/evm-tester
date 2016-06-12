@@ -2,7 +2,7 @@ language: generic
 sudo: no
 install:
   - export PATH="/home/travis/.evm/bin:$PATH"
-  - git clone -b origin/master https://github.com/phillord/evm.git /home/travis/.evm
+  - git clone -b master https://github.com/phillord/evm.git /home/travis/.evm
   - evm config path /tmp
   - evm install emacs-24.3-travis --use --skip
 script:
