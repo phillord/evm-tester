@@ -2,7 +2,7 @@ language: generic
 sudo: no
 install:
   - cd /tmp
-  - curl http://www.russet.org.uk/scratch/emacs-25-pre-travis.tgz
+  - wget http://www.russet.org.uk/scratch/emacs-25-pre-travis.tgz
   - tar xvf emacs-25-pre-travis.tgz
   - ls *
 script:
